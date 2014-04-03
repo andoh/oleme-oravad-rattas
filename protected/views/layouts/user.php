@@ -12,11 +12,19 @@
     <!-- Generate Favicon Using 1.http://tools.dynamicdrive.com/favicon/ OR 2.http://www.favicon.cc/ -->
     <link rel="shortcut icon" href="images/favicon.png" />
 
+<<<<<<< HEAD
     <?php 
         Yii::app()->clientScript->generateUrl(Yii::app()->clientScript->registerCssFile('css/style.css'));
         Yii::app()->clientScript->registerScriptFile('js/jquery-1.11.0.js');
         Yii::app()->clientScript->registerScriptFile('js/custom.js');
         ?>
+=======
+    <?php   
+        $cs = Yii::app()->getClientScript();
+        $cs->registerCssFile('css/style.css',null,array('async'=>'async'));
+        $cs->registerScriptFile('/js/jquery-1.11.0.js',null);
+        $cs->registerScriptFile('js/custom.js',null,array('async'=>'async'));?>
+>>>>>>> parent of 5438c97... Minor fix
  
 </head>
 <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
