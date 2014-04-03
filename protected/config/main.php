@@ -40,7 +40,10 @@ return array(
 		'clientScript'=>array(
 			'class'=>'ext.minScript.components.ExtMinScript',
 			//'optionName'=>'optionValue',
-		),
+
+				),
+			
+		
 
 		
 		'user'=>array(
@@ -89,14 +92,12 @@ return array(
 			),
 		),
 	),
-
-
 	'controllerMap'=>array(
-				'min'=>array(
-					'class'=>'ext.minScript.controllers.ExtMinScriptController',
-					//'optionName'=>'optionValue',
-				),
-			),
+		'min'=>array(
+			'class'=>'ext.minScript.controllers.ExtMinScriptController',
+			//'optionName'=>'optionValue',
+		),
+	),
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(

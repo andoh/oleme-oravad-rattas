@@ -14,7 +14,9 @@
     <link rel="shortcut icon" href="images/favicon.png" />
 
     <?php   
-        Yii::app()->clientScript->registerCssFile('css/style.css');
+        Yii::app()->clientScript->generateUrl(Yii::app()->clientScript->registerCssFile('css/style.css'));
+        
+        //Yii::app()->clientScript->registerCssFile('css/style.css');
         Yii::app()->clientScript->registerScriptFile('js/jquery-1.11.0.js');
         Yii::app()->clientScript->registerScriptFile('js/custom.js');
         /*

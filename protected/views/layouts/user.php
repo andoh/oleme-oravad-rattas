@@ -12,8 +12,8 @@
     <!-- Generate Favicon Using 1.http://tools.dynamicdrive.com/favicon/ OR 2.http://www.favicon.cc/ -->
     <link rel="shortcut icon" href="images/favicon.png" />
 
-    <?php   
-        Yii::app()->clientScript->registerCssFile('css/style.css');
+    <?php 
+        Yii::app()->clientScript->generateUrl(Yii::app()->clientScript->registerCssFile('css/style.css'));
         Yii::app()->clientScript->registerScriptFile('js/jquery-1.11.0.js');
         Yii::app()->clientScript->registerScriptFile('js/custom.js');
         ?>
