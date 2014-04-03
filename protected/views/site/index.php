@@ -20,9 +20,7 @@
   <div class="content">    
     <?php foreach ($cars as $car) {?>    
     <div class="object">
-      <!-- <a href="?r=site/object&amp;id=<?php echo $car->ID; ?>"></a>
-      -->
-      <a href="site/object/<?php echo $car->ID; ?>"></a>
+      <a href="?r=site/object&amp;id=<?php echo $car->ID; ?>"></a>
       <div class="object-img">
         <img alt="" src="images/<?php echo $car->ID; echo "/"; echo $car->mainImg; ?>" />
       </div>    
