@@ -26,8 +26,7 @@ return array(
 			'password'=>'misiganes',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
-		),
-		
+		),	
 	),
 
 	// application components
@@ -35,8 +34,15 @@ return array(
 		'image'=>array( 
 			'class'=>'application.extensions.image.CImageComponent',
 			'driver'=>'GD',
-),
+		),
 
+		//MinScript extension
+		'clientScript'=>array(
+			'class'=>'ext.minScript.components.ExtMinScript',
+			//'optionName'=>'optionValue',
+		),
+
+		
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
@@ -84,6 +90,13 @@ return array(
 		),
 	),
 
+
+	'controllerMap'=>array(
+				'min'=>array(
+					'class'=>'ext.minScript.controllers.ExtMinScriptController',
+					//'optionName'=>'optionValue',
+				),
+			),
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
