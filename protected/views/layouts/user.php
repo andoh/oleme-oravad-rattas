@@ -13,10 +13,10 @@
     <link rel="shortcut icon" href="images/favicon.png" />
 
     <?php   
-        $cs = Yii::app()->getClientScript();
-        $cs->registerCssFile('css/style.css',null,array('async'=>'async'));
-        $cs->registerScriptFile('/js/jquery-1.11.0.js',null);
-        $cs->registerScriptFile('js/custom.js',null,array('async'=>'async'));?>
+        Yii::app()->clientScript->registerCssFile('css/style.css');
+        Yii::app()->clientScript->registerScriptFile('js/jquery-1.11.0.js');
+        Yii::app()->clientScript->registerScriptFile('js/custom.js');
+        ?>
  
 </head>
 <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
